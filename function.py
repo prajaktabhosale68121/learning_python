@@ -50,11 +50,11 @@ print(add2(2,3))
 # Create a function that will calculate area of One square
 # Then function should accept two parameters width and height and calculate area
 # Then print
-def square(aa):
+def areaOfsquare(aa):
     area = aa*aa
     return area
 
-resultOfOneSquare = square(2)
+resultOfOneSquare = areaOfsquare(2)
 print(resultOfOneSquare)
 
 # Create function that will calculate area of 5 squares
@@ -64,11 +64,11 @@ print(resultOfOneSquare)
 
 
 def calculateAreas(a,b,c,d,e):
-    a1 = square(a) #22 
-    b1 = square(b) #9
-    c1 = square(c) #56
-    d1 = square(d) #12
-    e1 = square(e) #3
+    a1 = areaOfsquare(a) #22 
+    b1 = areaOfsquare(b) #9
+    c1 = areaOfsquare(c) #56
+    d1 = areaOfsquare(d) #12
+    e1 = areaOfsquare(e) #3
     result = a1+b1+c1+d1+e1
     return result
 
