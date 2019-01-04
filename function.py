@@ -1,5 +1,5 @@
 # Why do we create function
-# to avoid repetation of code
+# to avoid repetation of code.
 
 # What is function scope
 # function scope is betwen its start line and end line
