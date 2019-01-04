@@ -1,5 +1,5 @@
 # Why do we create function
-# to avoid repetation of code.
+# to avoid repetation of code
 
 # What is function scope
 # function scope is betwen its start line and end line
@@ -50,11 +50,48 @@ print(add2(2,3))
 # Create a function that will calculate area of One square
 # Then function should accept two parameters width and height and calculate area
 # Then print
+def square(aa):
+    area = aa*aa
+    return area
 
-#       15. Create function that will calculate area of 5 squares
+resultOfOneSquare = square(2)
+print(resultOfOneSquare)
+
+# Create function that will calculate area of 5 squares
 # Then function should accept areas for 5 squares like calculateAreas(22 , 9 , 56, 12 ,3)
 # Then print 
 # Then output should be 3854
+
+
+def calculateAreas(a,b,c,d,e):
+    a1 = square(a) #22 
+    b1 = square(b) #9
+    c1 = square(c) #56
+    d1 = square(d) #12
+    e1 = square(e) #3
+    result = a1+b1+c1+d1+e1
+    return result
+
+calculateAreas_Result = calculateAreas(22 , 9 , 56, 12 ,3)
+
+print(calculateAreas_Result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
