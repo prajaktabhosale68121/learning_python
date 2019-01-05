@@ -58,12 +58,12 @@ resultOfOneSquare = areaOfsquare(2)
 print(resultOfOneSquare)
 
 # Create function that will calculate area of 5 squares
-# Then function should accept areas for 5 squares like calculateAreas(22 , 9 , 56, 12 ,3)
+# Then function should accept areas for 5 squares like calculateAreasOfSquares(22 , 9 , 56, 12 ,3)
 # Then print 
 # Then output should be 3854
 
 
-def calculateAreas(a,b,c,d,e):
+def calculateAreasOfSquares(a,b,c,d,e):
     a1 = areaOfsquare(a) #22 
     b1 = areaOfsquare(b) #9
     c1 = areaOfsquare(c) #56
@@ -72,9 +72,9 @@ def calculateAreas(a,b,c,d,e):
     result = a1+b1+c1+d1+e1
     return result
 
-calculateAreas_Result = calculateAreas(22 , 9 , 56, 12 ,3)
+calculateAreasOfSquares_Result = calculateAreasOfSquares(22 , 9 , 56, 12 ,3)
 
-print(calculateAreas_Result)
+print(calculateAreasOfSquares_Result)
 
 
 
