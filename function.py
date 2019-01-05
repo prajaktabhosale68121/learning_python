@@ -48,7 +48,7 @@ print(add2(2,3))
 # Assign computed value from function to variable & prints
  
 # Create a function that will calculate area of One square
-# Then function should accept two parameters width and height and calculate area
+# Then function should accept one parameters and calculate area
 # Then print
 def areaOfsquare(aa):
     area = aa*aa
