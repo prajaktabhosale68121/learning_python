@@ -76,24 +76,32 @@ print(add6_result)
 # Pass array of object as parameter to function
 # Return array of object from function and print
 # Inside array of object push/add new object
-
-
-
-# How to pass parameters to function
+def add7(listofperson):
+    listofperson.append({'name': 'Saish', 'age' : 4 ,'address' : 'andheri'})
+    return listofperson
+    
+add7_result = add7([{ 'age':26 ,  'name' : 'prajakta', 'address' : 'andheri' , 'medals' : 7 },
+    { 'age':30 , 'name' : 'vijay', 'address' : 'borivali' , 'medals' : 2 }])
+print(add7_result)
 
 # How to write formula inside function
+def add8(cc,dd):
+    space = ' '
+    ans = cc + space + dd
+    return ans
+result = add8('saish','pawar')   
+print(result)
 
-# Assign computed value from function to variable & prints
- 
+
 # Create a function that will calculate area of One square
-# Then function should accept two parameters width and height and calculate area
+# Then function should accept one parameters and calculate area
 # Then print
-# def areaOfsquare(aa):
-#     area = aa*aa
-#     return area
+def areaOfsquare(aa):
+    area = aa*aa
+    return area
 
-# resultOfOneSquare = areaOfsquare(2)
-# print(resultOfOneSquare)
+resultOfOneSquare = areaOfsquare(2)
+print(resultOfOneSquare)
 
 # Create function that will calculate area of 5 squares
 # Then function should accept areas for 5 squares like calculateAreas(22 , 9 , 56, 12 ,3)
@@ -101,18 +109,18 @@ print(add6_result)
 # Then output should be 3854
 
 
-# def calculateAreas(a,b,c,d,e):
-#     a1 = areaOfsquare(a) #22 
-#     b1 = areaOfsquare(b) #9
-#     c1 = areaOfsquare(c) #56
-#     d1 = areaOfsquare(d) #12
-#     e1 = areaOfsquare(e) #3
-#     result = a1+b1+c1+d1+e1
-#     return result
+def calculateAreas(a,b,c,d,e):
+    a1 = areaOfsquare(a) #22 
+    b1 = areaOfsquare(b) #9
+    c1 = areaOfsquare(c) #56
+    d1 = areaOfsquare(d) #12
+    e1 = areaOfsquare(e) #3
+    result = a1+b1+c1+d1+e1
+    return result
 
-# calculateAreas_Result = calculateAreas(22 , 9 , 56, 12 ,3)
+calculateAreas_Result = calculateAreas(22 , 9 , 56, 12 ,3)
 
-# print(calculateAreas_Result)
+print(calculateAreas_Result)
 
 
 
