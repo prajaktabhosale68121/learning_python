@@ -124,7 +124,45 @@ print(calculateAreas_Result)
 
 
 
+#  Create a function that will calculate area of One Triangle
+#  Then function should accept two parameters base and height and calculate and Then print
+def areaOftriangle(aa,bb):
+    area = (aa*bb)/2
+    return area
 
+resultOfOnetriangle = areaOftriangle(2,5)
+print(resultOfOnetriangle)
+
+
+# Create function that will calculate area of 3 triangles
+# Then function should accept areas for 3 triangles
+# Eg : calculateAreas({height : 2,base : 3} , {height : 34,base : 9},{height : 1,base : 7})
+# Then print
+# Then output should be
+# def calculateAreasoftriangles({aaa,bbb} , {ccc,ddd} , {eee,fff}):
+#     areafirsttriangles = areaOftriangle(aaa,bbb)
+#     areasecondtriangles = areaOftriangle(ccc,ddd)
+#     areathirdtriangles = areaOftriangle(eee,fff)
+#     resultofthreearea = areafirsttriangles + areasecondtriangles + areathirdtriangles
+#     return resultofthreearea
+    
+# calculateareasoftriangles_result = calculateAreasoftriangles({base : 2,height : 3} , {base : 34,height: 9} , {base : 1, height:7})
+# print(calculateareasoftriangles_result)
+
+
+def calculateAreasoftriangles(t1 , t2 ,t3):
+    areafirsttriangles = areaOftriangle(t1['base'],t1['height'])
+    areasecondtriangles = areaOftriangle(t2['base'],t2['height'])
+    areathirdtriangles = areaOftriangle(t3['base'],t3['height'])
+    resultofthreearea = areafirsttriangles + areasecondtriangles + areathirdtriangles
+    return resultofthreearea
+    
+triangel1 = {'base' : 2, 'height' : 4}
+triangel2 = {'base' : 34, 'height' : 9}
+triangel3 = {'base' : 1,'height' : 7}
+
+calculateareasoftriangles_result = calculateAreasoftriangles( triangel1, triangel2, triangel3)
+print(calculateareasoftriangles_result)
 
 
 
