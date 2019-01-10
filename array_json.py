@@ -1,6 +1,6 @@
 from data import *
 
-# JSON operations
+# ACCESS JSON
 yo = {'name' : 'vijsy' , 'age' : 23 , 'schools' : ['primary','secondary']}
 
 # set
@@ -11,7 +11,19 @@ print(yo)
 h = yo['age']
 print(h)
 
-# solve questions
+# ACCESS ARRAY
+fruitsList = ["apple", "banana", "cherry"]
+def myFormula(yooo):
+    add = yooo + ' hello '
+    subract = add + ' hiee '
+    khanaKhaKeJana = subract + ' hmm '
+    print(khanaKhaKeJana)
+    
+for item in fruitsList:
+    myFormula(item)
+
+
+# SOLVE QUESTIONS FROM DOCUMENT
 counter  = 0
 for item in patients:
     if item['gender'] == "Male":
