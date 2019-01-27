@@ -164,3 +164,12 @@ for item in patient:
         h = item['salary'] + 10000
         print(h)
 
+# Q9 - What is total asset count 0f Barbabra
+
+count = 0
+for item in patient:
+    if item['first_name'] == 'Barbabra':
+        assets_of_barbara = item['assets']
+        for a_o_b in assets_of_barbara:
+            count = count + 1
+print(count)
