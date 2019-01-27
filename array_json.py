@@ -109,5 +109,51 @@ print('Total Salary')
 print(total_salary)    
       
         
+# Q7  Using If condition - Get total salary of person whose first_name is Antonella,Jonathan,Dulcea
+# total_salary = 0
+# for item in patient:
+#     if item['first_name'] == 'Antonella' :
+#         print('Antonella')
+#         print(item['salary'])
+#         total_salary = total_salary + item['salary']
+        
+#     if item['first_name'] == 'Jonathan':
+#         print('Jonathan')
+#         print(item['salary'])
+#         total_salary = total_salary + item['salary']
+  
+#     if item['first_name'] == 'Dulcea':
+#         print('Dulcea')
+#         print(item['salary'])
+#         total_salary = total_salary + item['salary']
+  
+    
+# print('Total Salary')
+# print(total_salary)    
+
+
+#Q7.1 - Using If / Or operator- Get total salary of person whose first_name is Antonella,Jonathan,Dulcea
+# total_salary = 0
+# for item in patient:
+#     if item['first_name'] == 'Antonella' or item['first_name'] == 'Jonathan' or item['first_name'] == 'Dulcea' :
+#         print(item['first_name'])
+#         print(item['salary'])
+#         total_salary = total_salary + item['salary']
+    
+# print('Total Salary')
+# print(total_salary)    
+
+# Q7.2 - Using in operator - Get total salary of person whose first_name is Antonella,Jonathan,Dulcea
+
+total_salary = 0
+people = ['Antonella', 'Jonathan' ,'Dulcea']
+for item in patient:
+    if item['first_name'] in people:
+        print(item['first_name'])
+        print(item['salary'])
+        total_salary = total_salary + item['salary']
+        
+print('Total Salary')
+print(total_salary) 
 
 
