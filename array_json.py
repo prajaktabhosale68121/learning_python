@@ -156,4 +156,11 @@ for item in patient:
 print('Total Salary')
 print(total_salary) 
 
+# Q8 - Increment salary of person by 10,000 whose email id is gjotham13@nature.com
+
+for item in patient:
+    if item['email'] == 'gjotham13@nature.com':
+        print(item['salary'])
+        h = item['salary'] + 10000
+        print(h)
 
