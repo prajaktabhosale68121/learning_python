@@ -173,3 +173,34 @@ for item in patient:
         for a_o_b in assets_of_barbara:
             count = count + 1
 print(count)
+# Q10 - What is total worth of Emmery
+#  count = 0
+# for item in patient:
+#     if item['first_name'] == 'Emmery':
+#         assets_of_Emmery = item['assets']
+#         for a_o_e in assets_of_Emmery:
+#             count = count + 1
+
+# print(count)
+
+# Q11 - Mr Edward Purchased New villa of worth 30,000 .So please update his assets list 
+
+# for item in patient:
+#      if item['first_name'] == 'Edward':
+#      print(item)
+#         h = item['assets']
+#         print(h)
+        
+#         item['assets'] = [{'name':'New villa','worth':30000}]
+        
+#         print(item['assets'])
+  
+# Q12 -  Which phd person is having highest salary
+
+highest_salary = 0
+for item in patient:
+    if item['Qualification'] == 'phd':
+        if item['salary'] > highest_salary :
+            highest_salary = item['salary']
+
+print(highest_salary)
