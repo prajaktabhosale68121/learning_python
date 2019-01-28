@@ -204,3 +204,18 @@ for item in patient:
             highest_salary = item['salary']
 
 print(highest_salary)
+
+
+
+# Q12 -  Which phd person is having highest salary
+
+highest_salary = 0  
+highest_salary_person = ''
+for item in patient:
+    if item['Qualification'] == 'phd':
+        if item['salary'] > highest_salary :
+            highest_salary = item['salary']
+            highest_salary_person = item['first_name']
+
+print(highest_salary)
+print(highest_salary_person)
